@@ -113,7 +113,7 @@ class edu_ucmerced_payment_ucmpaymentcollection extends CRM_Core_Payment {
    * @return void
    */
   function __construct( $mode, &$paymentProcessor ) {
-    $this->_mode             = $mode;
+    self::$_mode             = $mode;
     $this->_paymentProcessor = $paymentProcessor;
     $this->_processorName    = ts('UC Merced Payment Collection');
   }
